@@ -1,30 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cardsAdj = [
-    {
-      name: "gato",
-      img: "img/gato.jpg"
-    },
-
+    {name: "gato",img: "img/gato.jpg"},
     { name: "elefante", img: "img/if.jpg" },
-
     { name: "conejo", img: "img/ih.jpg" },
-
     { name: "leon", img: "img/ik.png" },
-
     { name: "vaca", img: "img/il.png" },
-
     { name: "jirafa", img: "img/imagenes.jpg" },
-
     { name: "gato", img: "img/gato.jpg" },
-
     { name: "elefante", img: "img/if.jpg" },
-
     { name: "conejo", img: "img/ih.jpg" },
-
     { name: "leon", img: "img/ik.png" },
-
     { name: "vaca", img: "img/il.png" },
-
     { name: "jirafa", img: "img/imagenes.jpg" }
   ];
   const cuadricula = document.querySelector(".cuadricula");
@@ -42,4 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
       cuadricula.appendChild(carta);
     }
   }
+  function voltearCarta() {
+    var cardId = this.getAttribute("data-id");
+    cartasEscogidas.push((cardAdj[cardId].name: "gato"));
+    cartasEscogidasId.push(cardId);
+    this.setAttribute("src", cardAdj[cardId].img / gato.jpg);
+    if (cartasEscogidas.lenght === 2) {
+      setTimeout(verificarPareja, 1000);
+    } 
 });
